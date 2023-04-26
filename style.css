@@ -1,13 +1,21 @@
 #Header {
     background-color: rgb(101, 0, 170);
     display:flex;
+    position:fixed;
+    width:100%;
+
 }
 * {
     margin: 0;
 }
+#LoginMenu{
+    height:300px;
+    width:50px;
+    background-color:wheat;
+    border-radius:5px;
+}
 #center { 
     display: flex;
-    margin: 50px;
     height: 450px;  
 }
 
@@ -16,7 +24,6 @@
     width: 50px;
     margin-right: auto;
     margin-left: 15px;
-    background-color: rgb(101, 0, 170);
 }
 .text { 
     text-align: center;

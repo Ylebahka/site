@@ -9,10 +9,25 @@
 </head>
 <body>
     <div id="Header">
-        <img id="LogoImage" src="Spike1.png"/>
+        <img class="LogoImage" src="Spike1.png"/>
         <div>
-            <button class="NavButton"> <img id="LogoImage" src="spike2.png" /></button>
-            <div id="LoginMenu"> </div>
+            <button id="NavButton"><Img class="LogoImage" src="LoginIcon.png"></Img></button>
+            <div class="LoginMenu">
+                <div id="RegistrationLoginChange">
+                     <button class="ChangeButton LoginChosen LoginSelectButton"><h1>Login</h1></button> <button class="ChangeButton RegistrationSelectButton"><h1>Registration</h1></button> 
+                </div>
+                <div class = "LoginInput">
+                    <h1>Login</h1>
+                    <input type="text" class="InputField">
+                </div>
+
+                <div class = "LoginInput">
+                    <h1>Password</h1>
+                    <input type="password" class="InputField">
+
+                    <button id = "LoginButton"><h1>Login</h1></button>
+                </div>   
+            </div>
         </div>
     </div>
     <div id="center">
@@ -21,4 +36,5 @@
         <h1 class="text">footer</h1>
     </div>
 </body>
+<script src="script.js"></script>
 </html>

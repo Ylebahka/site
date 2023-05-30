@@ -6,8 +6,8 @@ include("functions.php");
 $user_data = check_login($con);
 
 if (isset($_GET['logout'])) {
-    session_destroy(); // Уничтожаем все данные сессии
-    header("Location: login.php"); // Перенаправляем на страницу входа
+    session_destroy();
+    header("Location: login.php");
     die();
 }
 
@@ -39,7 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
-// Получаем комментарии из базы данных
 $query = "SELECT * FROM comments";
 $result = mysqli_query($con, $query);
 
@@ -100,9 +99,7 @@ $result = mysqli_query($con, $query);
                 <h2>Create New Comment</h2>
             </div>
             <?php
-            // Проверяем наличие комментариев
             if (mysqli_num_rows($result) > 0) {
-                // Выводим каждый комментарий в отдельном элементе
                 while ($row = mysqli_fetch_assoc($result)) {
                     $creator_name = $row['creator_name'];
                     $header = $row['header'];

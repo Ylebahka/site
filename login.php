@@ -48,10 +48,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label for="username"><h1>Username:</h1></label>
             <input class="InputField"type="text" name="user_name" id="username">
         </div>
-        <!-- <div class="LoginInput">
-            <label for="email"><h1>Email:</h1></label>
-            <input class="InputField" type="email" name="email" id="email">
-        </div> -->
         <div class="LoginInput">
             <label for="password"><h1>Password:</h1></label>
             <input class="InputField" type="password" name="password" id="password">
